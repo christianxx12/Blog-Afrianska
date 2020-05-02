@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/e4521333c6.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Blog Afrianska</title>
   </head>
   <body>
@@ -12,10 +19,10 @@
         <!-- ICONO -->
         <div class="nav-icon">
           <div class="icon-left"></div>
-          <div class="icon-right"><h2>A</h2></div>
+          <div class="icon-right"><h2 class="icon-right-A">A</h2></div>
         </div>
         <!-- RIGHT NAV -->
-        <ul class="nav__menu">
+        <ul class="nav-menu">
           <li>
             <a href="#">Home</a>
           </li>
@@ -27,75 +34,120 @@
           </li>
         </ul>
       </nav>
+
+      <!-- BANNER -->
       <section class="banner">
         <h2 class="banner-title">Blog Afrianska</h2>
-        <p>
+        <p class="banner-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </section>
 
+      <!-- MAIN INPUT  -->
       <section class="main-input">
-        <span class="search-icon"></span>
-        <input type="text" />
+        <i class="fas fa-search"></i>
+        <input class="input" type="text" placeholder="Search Article" />
       </section>
 
+      <!-- POST POPULARES -->
       <section class="popular">
-        <h2 class="popular-title">Popular</h2>
-        <article class="popular-post-1">
-          <figure class="image-container">
-            <img src="/images/img-post-1.png" class="image-post-1" alt="" />
-          </figure>
-          <h3 class="post-1-heading">Feugiat sodales at nullam tellus</h3>
-          <p class="post-1-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-            posuere nibh tempor fringilla porta pellentesque ipsum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua
-          </p>
-        </article>
-        <article class="popular-post-2">
-          <figure class="image-container">
-            <img src="/images/img-post-2.png" class="image-post-2" alt="" />
-          </figure>
-          <h3 class="post-2-heading">
-            Porta proin tellus sed pulvinar odio eu pulvinar
-          </h3>
-          <p class="post-2-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </article>
-        <article class="popular-post-3">
-          <figure class="image-container">
-            <img src="/images/img-post-3.png" alt="" class="image-post-3" />
-          </figure>
-          <h3 class="post-3-description">
-            Non quam tortor, proin eu egestas scelerisque
-          </h3>
-          <p class="post-3-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </article>
-        <article class="popular-post-4">
-          <figure class="image-container">
-            <img src="/images/img-post-4.png" class="image-post-4" alt="" />
-          </figure>
-          <h3 class="post-4-description">
-            Amet amet sed pharetra risus sit eget interdum
-          </h3>
-          <p class="post-4-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </article>
+        <h2 class="top-title">Popular</h2>
+        <div class="post-container">
+          <article class="post-1">
+            <img src="images/img-post-1.png" class="image-post-1" alt="" />
+            <div class="letras">
+              <h3 class="post-1-heading">Feugiat sodales at nullam tellus</h3>
+              <p class="post-1-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <div class="post-final">
+                <div class="post-autor-fecha">
+                  <h5 class="post-autor">Samatha Leuthex</h5>
+                  <h5 class="post--fecha">May 5, 3 min read</h5>
+                </div>
+                <div class="post-icons">
+                  <i class="fas fa-bookmark post-save"></i>
+                  <i class="fas fa-share-alt post-share"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="post-2">
+            <img src="images/img-post-2.png" class="image-post-2" alt="" />
+            <h3 class="post-heading">
+              Porta proin tellus sed pulvinar odio eu pulvinar
+            </h3>
+            <p class="post-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+            <div class="post-final">
+              <div class="post-autor-fecha">
+                <h5 class="post-autor">Samatha Leuthex</h5>
+                <h5 class="post-fecha">May 5, 3 min read</h5>
+              </div>
+              <div class="post-icons">
+                <i class="fas fa-bookmark post-save"></i>
+                <i class="fas fa-share-alt post-share"></i>
+              </div>
+            </div>
+          </article>
+          <article class="post-3">
+            <img src="images/img-post-3.png" alt="" class="image-post-3" />
+            <h3 class="post-heading">
+              Non quam tortor, proin eu egestas scelerisque
+            </h3>
+            <p class="post-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+            <div class="post-final">
+              <div class="post-autor-fecha">
+                <h5 class="post-autor">Samatha Leuthex</h5>
+                <h5 class="post-fecha">May 5, 3 min read</h5>
+              </div>
+              <div class="post-icons">
+                <i class="fas fa-bookmark post-save"></i>
+                <i class="fas fa-share-alt post-share"></i>
+              </div>
+            </div>
+          </article>
+          <article class="post-4">
+            <img src="images/img-post-4.png" class="image-post-4" alt="" />
+            <h3 class="post-heading">
+              Amet amet sed pharetra risus sit eget interdum
+            </h3>
+            <p class="post-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+            <div class="post-final">
+              <div class="post-autor-fecha">
+                <h5 class="post-autor">Samatha Leuthex</h5>
+                <h5 class="post-fecha">May 5, 3 min read</h5>
+              </div>
+              <div class="post-icons">
+                <i class="fas fa-bookmark post-save"></i>
+                <i class="fas fa-share-alt post-share"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+        <h2 class="bottom-title">SEE ALL POPULAR ARTICLE</h2>
       </section>
 
+      <hr />
+
+      <!-- MAS POST -->
       <section class="all-article">
+        <h2>ALL ARTICLE</h2>
         <article class="article">
-          <img src="/images/img-post-5.png" class="article-image-5" alt="" />
+          <img src="images/img-post-5.png" class="article-image-5" alt="" />
           <h4 class="article-heading">
             Massa eu in laoreet enim augue vulputate nunc
           </h4>
@@ -110,7 +162,7 @@
           <i class="article-share"></i>
         </article>
         <article class="article">
-          <img src="/images/img-post-6.png" class="article-image-6" alt="" />
+          <img src="images/img-post-6.png" class="article-image-6" alt="" />
           <h4 class="article-heading">
             Feugiat a euismod arcu feugiat posuere morbi
           </h4>
@@ -125,7 +177,7 @@
           <i class="article-share"></i>
         </article>
         <article class="article">
-          <img src="/images/img-post-7.png" class="article-image-7" alt="" />
+          <img src="images/img-post-7.png" class="article-image-7" alt="" />
           <h4 class="article-heading">
             Sociis purus pellentesque faucibus vitae et felis.
           </h4>
@@ -140,7 +192,7 @@
           <i class="article-share"></i>
         </article>
         <article class="article">
-          <img src="/images/img-post-8.png" class="article-image-8" alt="" />
+          <img src="images/img-post-8.png" class="article-image-8" alt="" />
           <h4 class="article-heading">
             Cursus feugiat mi pellentesque mauris sed eu.
           </h4>
@@ -155,7 +207,7 @@
           <i class="article-share"></i>
         </article>
         <article class="article">
-          <img src="/images/img-post-9.png" class="article-image-9" alt="" />
+          <img src="images/img-post-9.png" class="article-image-9" alt="" />
           <h4 class="article-heading">
             A morbi arcu curabitur etiam fringilla augue.
           </h4>
@@ -181,7 +233,7 @@
         </section>
       </section>
 
-      <footer class="footer">
+      <!-- <footer class="footer">
         <section class="contract">
           <div class="contrac-left">
             <h2 class="contract-left-heading">
@@ -231,7 +283,7 @@
         </section>
 
         <h5 class="license">2019 © Afrianska. All rights reserved.</h5>
-      </footer>
+      </footer> -->
     </div>
   </body>
 </html>
