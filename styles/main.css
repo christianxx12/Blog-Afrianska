@@ -235,7 +235,7 @@ a {
   cursor: pointer;
 }
 
-.post-heading {
+.heading {
   font-family: Helvetica;
   font-size: 22px;
   line-height: 32px;
@@ -289,7 +289,7 @@ hr {
   color: #1f3f68;
 }
 
-.all-article .article-description {
+.all-article .description {
   font-family: Arial;
   font-size: 14px;
   line-height: 24px;
